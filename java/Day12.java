@@ -1,5 +1,6 @@
 import java.util.*;
 
+// Code given by challenge below
 class Person {
     protected String firstName;
     protected String lastName;
@@ -18,6 +19,7 @@ class Person {
             + "\nID: " + idNumber);
     }
 }
+// ^^ Code given ends
 
 class Student extends Person {
     int[] testResults;
@@ -51,4 +53,25 @@ class Student extends Person {
             return 'T';
         }
     }
+ }
+
+//Code given by challenge below
+ public class Day12 {
+     public static void main(String[] args) {
+         Scanner scanner = new Scanner(System.in);
+         String firstName = scan.next();
+         String lastName = scan.next();
+         int id = scan.nextInt();
+         int numScores = scan.nextInt();
+         int[] testScores = new int[numScores];
+         for(int i = 0; i < numScores; i++) {
+             testScores[i] = scan.nextInt();
+         }
+         scan.close();
+
+         Student s = new Student(firstName, lastName,
+            id, testScores);
+        s.printPerson();
+        System.out.println("Grade: " + s.calculate());
+     }
  }
