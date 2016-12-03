@@ -1,4 +1,5 @@
 import java.util.*;
+import java.io.*;
 
 // Code given by challenge below
 class Person {
@@ -22,22 +23,20 @@ class Person {
 // ^^ Code given ends
 
 class Student extends Person {
-    int[] testResults;
+    int[] testScores;
 
     Student(String firstName, String lastName,
-        int id, int[] scores) {
-        super.firstName = firstName;
-        super.lastName = lastName;
-        super.idNumber = id;
-        this.testResults = scores;
+        int id, int scores[]) {
+        super(firstName, lastName, id);
+        this.testScores = scores;
     }
 
     char calculate() {
         int average = 0;
-        for(int i = 0; i < this.testResults.length; i++) {
-            average += this.testResults[i];
+        for(int i = 0; i < this.testScores.length; i++) {
+            average += this.testScores[i];
         }
-        average /= this.testResults.length;
+        average /= this.testScores.length;
 
         if(average >= 90 && average <= 100) {
             return 'O';
