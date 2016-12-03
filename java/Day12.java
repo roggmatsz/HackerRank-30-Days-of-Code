@@ -51,6 +51,7 @@ class Student extends Person {
         } else if(average < 40) {
             return 'T';
         }
+        return 'x';
     }
  }
 
