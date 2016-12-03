@@ -32,10 +32,10 @@ class Student extends Person {
 
     char calculate() {
         int average = 0;
-        for(int i = 0; i < this.testResults.length(); i++) {
+        for(int i = 0; i < this.testResults.length; i++) {
             average += this.testResults[i];
         }
-        average /= this.testResults.length();
+        average /= this.testResults.length;
 
         if(average >= 90 && average <= 100) {
             return 'O';
