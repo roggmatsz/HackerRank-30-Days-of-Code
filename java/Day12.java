@@ -19,3 +19,16 @@ class Person {
     }
 }
 
+class Student extends Person {
+    int[] testResults;
+
+    Student(String firstName, String lastName,
+        int id, int[] scores) {
+        super.firstName = firstName;
+        super.lastName = lastName;
+        super.idNumber = id;
+        this.testResults = scores;
+    }
+
+
+}
