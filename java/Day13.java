@@ -13,6 +13,24 @@ abstract class Book {
     public abstract void display();
 }
 
+class MyBook extends Book {
+    String innerPrice;
+
+    MyBook(String title, String author,
+        String price) {
+        super(title, author);
+        innerPrice = price;
+    }
+
+    void display() {
+        System.out.println(
+            "Title: " + super.title +
+            "\nAuthor: " + super.author +
+            "\nPrice: " + super.innerPrice
+        );
+    }
+}
+
 class Day13 {
     static void main(String[] args) {
         String title = Console.ReadLine();
