@@ -15,7 +15,7 @@ class Difference {
         for(int i = 0; i < this.elements.length; i++) {
             for(int j = i + 1; j < this.elements.length; j++ ) {
                 if(Math.abs(elements[i] - elements[j]) > maxDifference) {
-                    maxDifference = Math.abs(i - j);
+                    maxDifference = Math.abs(elements[i] - elements[j]);
                 }
             }
         }
