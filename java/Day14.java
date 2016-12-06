@@ -1,9 +1,25 @@
 import java.io.*;
 import java.util.*;
+import java.math.*;
 
 class Difference {
     private int[] elements;
     public int maximumDifference;
+
+    public Difference(int[] numbers) {
+        this.elements = numbers;
+    }
+
+    public void computeDifference() {
+        int maxDifference = 0;
+        for(int i = 0; i < this.elements.length; i++) {
+            for(int j = i + 1; j < this.elements.length; j++ ) {
+                if(Math.abs(elements[i] - elements[j]) > maxDifference) {
+                    maxDifference = Math.abs(i - j);
+                }
+            }
+        }
+    }
 }
 
 public class Day14 {
