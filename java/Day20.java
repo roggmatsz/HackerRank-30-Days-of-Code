@@ -19,11 +19,10 @@ public class Day20 {
     }
 
     static int bubbleSort(int[] numberList) {
-        for(int i = 0; i < n; i++) {
-            int swaps = 0;
-
-            for(int j = 0; j < n - 1; j++) {
-                if(a[j] > a[j + 1]) {
+        int swaps = 0;
+        for(int i = 0; i < numberList.length; i++) {
+            for(int j = 0; j < numberList.length - 1; j++) {
+                if(numberList[j] > numberList[j + 1]) {
                     swap(numberList, j, j + 1);
                     swaps++;
                 }
