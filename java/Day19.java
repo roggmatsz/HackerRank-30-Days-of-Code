@@ -5,6 +5,22 @@ interface AdvancedArithmetic {
     int divisorSum(int n);
 }
 
+class Calculator implements AdvancedArithmetic {
+    public int divisorSum(int n) {
+        List<int> divisors = new ArrayList<int>();
+        for(int i = 1; i <= n; i++) {
+            if(i % n == 0) {
+                divisors.add(i);
+            }
+        }
+        int total = 0;
+        for(int number : divisors) {
+            total += number;
+        }
+        return total;
+    }
+}
+
 public class Day19 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
