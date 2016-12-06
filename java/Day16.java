@@ -10,7 +10,7 @@ public class Day16 {
             parsedInt = Integer.parseInt(S);
             System.out.println(parsedInt);
         } catch(Exception e) {
-            System.out.println("Bad String.");
+            System.out.println("Bad String");
         }
     }
 }
