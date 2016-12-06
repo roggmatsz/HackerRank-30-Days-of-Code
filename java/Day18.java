@@ -1,6 +1,32 @@
 import java.io.*;
 import java.util.*;
 
+class Solution {
+    LinkedList stack;
+    LinkedList queue;
+
+    Solution() {
+        this.stack = new LinkedList();
+        this.queue = new LinkedList();
+    }
+
+    public void pushCharacter(char c) {
+        stack.addFirst(c);
+    }
+
+    public char popCharacter() {
+        return stack.pop();
+    }
+
+    public void enqueueCharacter(char c) {
+        queue.addLast();
+    }
+
+    public char dequeueCharacter() {
+        return queue.pop();
+    }
+}
+
 public class Day18 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
