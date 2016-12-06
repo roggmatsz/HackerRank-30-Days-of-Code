@@ -15,15 +15,15 @@ class Solution {
     }
 
     public char popCharacter() {
-        return stack.pop();
+        return (char) stack.pop();
     }
 
     public void enqueueCharacter(char c) {
-        queue.addLast();
+        queue.addLast(c);
     }
 
     public char dequeueCharacter() {
-        return queue.pop();
+        return (char) queue.pop();
     }
 }
 
