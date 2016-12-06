@@ -7,9 +7,9 @@ interface AdvancedArithmetic {
 
 class Calculator implements AdvancedArithmetic {
     public int divisorSum(int n) {
-        List<int> divisors = new ArrayList<int>();
+        List<Integer> divisors = new ArrayList<Integer>();
         for(int i = 1; i <= n; i++) {
-            if(i % n == 0) {
+            if(n % i == 0) {
                 divisors.add(i);
             }
         }
