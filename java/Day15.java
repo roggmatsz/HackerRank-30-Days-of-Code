@@ -13,7 +13,15 @@ class Node {
 
 public class Day15 {
     public static Node insert(Node head, int data) {
-
+        if(head == null) {
+            return new Node(data);
+        }
+        Node headCopy = head;
+        while(headCopy.next != null) {
+            headCopy = headCopy.next;
+        }
+        headCopy.next = new Node(data);
+        return head;
     }
 
     public static void display(Node head) {
