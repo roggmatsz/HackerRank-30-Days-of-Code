@@ -19,6 +19,7 @@ class Difference {
                 }
             }
         }
+        this.maximumDifference = maxDifference;
     }
 }
 
