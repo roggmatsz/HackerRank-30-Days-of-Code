@@ -8,6 +8,7 @@ public class Day16 {
         int parsedInt;
         try {
             parsedInt = Integer.parseInt(s);
+            System.out.println(parsedInt);
         } catch(Exception e) {
             System.out.println("Bad String.");
         }
