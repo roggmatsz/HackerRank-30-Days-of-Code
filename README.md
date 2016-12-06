@@ -6,7 +6,11 @@
 
 ## Status
 Java: in Progress
+
 Swift: Not started.
+
 Python: Not started.
+
 C#: Not started.
+
 Javascript: Not started.
