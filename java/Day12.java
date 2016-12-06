@@ -59,15 +59,15 @@ class Student extends Person {
  public class Day12 {
      public static void main(String[] args) {
          Scanner scanner = new Scanner(System.in);
-         String firstName = scan.next();
-         String lastName = scan.next();
-         int id = scan.nextInt();
-         int numScores = scan.nextInt();
+         String firstName = scanner.next();
+         String lastName = scanner.next();
+         int id = scanner.nextInt();
+         int numScores = scanner.nextInt();
          int[] testScores = new int[numScores];
          for(int i = 0; i < numScores; i++) {
-             testScores[i] = scan.nextInt();
+             testScores[i] = scanner.nextInt();
          }
-         scan.close();
+         scanner.close();
 
          Student s = new Student(firstName, lastName,
             id, testScores);

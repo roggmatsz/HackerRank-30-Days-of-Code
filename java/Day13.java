@@ -1,6 +1,5 @@
-using System;
-using System.Collections.Generic;
-using System.IO;
+import java.util.*;
+import java.io.*;
 
 abstract class Book {
     protected String title;
@@ -19,23 +18,24 @@ class MyBook extends Book {
     MyBook(String title, String author,
         String price) {
         super(title, author);
-        innerPrice = price;
+        this.innerPrice = price;
     }
 
     void display() {
         System.out.println(
             "Title: " + super.title +
             "\nAuthor: " + super.author +
-            "\nPrice: " + super.innerPrice
+            "\nPrice: " + this.innerPrice
         );
     }
 }
 
-class Day13 {
-    static void main(String[] args) {
-        String title = Console.ReadLine();
-        String author = Console.ReadLine();
-        int price = Int32.Parse(Console.ReadLine());
+public class Day13 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String title = scanner.ReadLine();
+        String author = scanner.ReadLine();
+        int price = Int32.Parse(scanner.ReadLine());
         
         Book new_novel = new MyBook(title, author, price);
         new_novel.display();
