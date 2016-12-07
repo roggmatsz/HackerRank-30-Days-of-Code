@@ -2,13 +2,13 @@
 
 import sys
 
-n = int(input().strip())
+N = int(input().strip())
 
-if n % 2 != 0:
+if N % 2 != 0:
     print('Weird')
-if n % 2 == 0 and n > 1 and n < 6:
+if N % 2 == 0 and N > 1 and N < 6:
     print('Not Weird')
-if n % 2 == 0 and n > 5 and n < 21:
+if N % 2 == 0 and N > 5 and N < 21:
     print('Weird')
-if n % 2 == 0 and n > 20:
+if N % 2 == 0 and N > 20:
     print('Not Weird')
