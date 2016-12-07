@@ -1,7 +1,7 @@
 import java.lang.reflect.Method;
 
 class Day20 {
-    void printArray(T arr) {
+    static <T> void printArray(T[] arr) {
         for(int i = 0; i < arr.length; i++) {
             System.out.println(arr[i]);
         }
