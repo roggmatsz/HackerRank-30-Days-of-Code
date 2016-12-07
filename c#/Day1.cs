@@ -11,8 +11,8 @@ class Solution {
         double secDou;
         string secStr;
 
-        secInt = (int) Console.ReadLine();
-        secDou = (double) Console.ReadLine();
+        secInt = Convert.ToInt32(Console.ReadLine());
+        secDou = Convert.ToDouble(Console.ReadLine());
         secStr = Console.ReadLine();
 
         Console.WriteLine(i + secInt);
