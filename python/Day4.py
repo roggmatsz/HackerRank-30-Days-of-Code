@@ -11,7 +11,7 @@ class Person:
         elif self.age >= 13 and self.age < 18:
             print('You are a teenager.')
         else:
-            print('You are old')
+            print('You are old.')
 
     def yearPasses(self):
         self.age += 1
