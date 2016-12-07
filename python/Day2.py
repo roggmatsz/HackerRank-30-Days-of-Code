@@ -7,5 +7,4 @@ tax = mealCost * (taxPercent / 100)
 total = round(mealCost + tax + tip)
 
 print("The total meal cost is " + \
-    total + "dollars.")
-    
+    str(total) + " dollars.")
