@@ -12,7 +12,7 @@ public class Day20 {
 
         int swaps = bubbleSort(a);
         System.out.println("Array is sorted in " + 
-            swaps +
+            swaps + " swaps." +
             "\nFirst Element: " + a[0] + 
             "\nLast Element: " + a[n - 1]
         );
