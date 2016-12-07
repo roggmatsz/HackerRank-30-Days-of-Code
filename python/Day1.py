@@ -6,8 +6,8 @@ secondInteger = 0
 secondDouble = 0.0
 secondString = ''
 
-secondInteger = input()
-secondDouble = input()
+secondInteger = int(input())
+secondDouble = float(input())
 secondString = input()
 
 print(i + secondInteger)
